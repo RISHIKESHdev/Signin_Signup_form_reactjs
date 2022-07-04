@@ -17,9 +17,9 @@ function App() {
             <label htmlFor="b2" >Email-id</label>
             <input type="text" id="b2" required="required"/>
             <label htmlFor="b3" >Password</label>
-            <input type="text" id="b3" required="required"/>
+            <input type="password" id="b3" required="required"/>
             <label htmlFor="b4" >Password Check</label>
-            <input type="text" id="b4" required="required"/>
+            <input type="password" id="b4" required="required"/>
             <button>SIGN UP</button>
           </form>
           </>):(<>
@@ -27,7 +27,7 @@ function App() {
               <label htmlFor="b2" >Email-id</label>
               <input type="text" id="b2" required="required"/>
               <label htmlFor="b3" >Password</label>
-              <input type="text" id="b3" required="required"/>
+              <input type="password" id="b3" required="required"/>
               <button>SIGN IN</button>
             </form>
           </>)}
