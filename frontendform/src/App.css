@@ -67,7 +67,8 @@ input{
     width:80%;
     height:8%;
     outline: none;
-    text-align: center;
+    text-align: left;
+    text-indent: 10px;
     box-shadow: inset 5px 5px 5px #cbced1,
     inset -5px -5px 5px #ffffff;
   }
