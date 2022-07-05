@@ -1,8 +1,11 @@
 import { useState } from 'react';
+import Signin from './components/Signin'
+import Signup from './components/Signup'
 import './App.css';
 
 function App() {
   const [isSignup,setisSignup]=useState(false)
+  const [formData,setformData]=useState({signin:{name:"",email:"",password:""},signup:[{name:"",email:"",password:"",passwordCheck:""}]})
   return (
     <body>
       <div className="formDiv">
@@ -10,26 +13,10 @@ function App() {
           <div className={`${isSignup ? "" :"activeSign"}`} onClick={()=>{setisSignup(false)}}>SIGN IN</div>
           <div className={`${isSignup ? "activeSign" :""}`} onClick={()=>{setisSignup(true)}}>SIGN UP</div>
         </div>
-          {(isSignup)?(<>
-          <form className="formBody">
-            <label htmlFor="b1" >Name</label>
-            <input type="text" id="b1" required="required"/>
-            <label htmlFor="b2" >Email-id</label>
-            <input type="text" id="b2" required="required"/>
-            <label htmlFor="b3" >Password</label>
-            <input type="password" id="b3" required="required"/>
-            <label htmlFor="b4" >Password Check</label>
-            <input type="password" id="b4" required="required"/>
-            <button>SIGN UP</button>
-          </form>
+          {(isSignup)?(<>  
+            <Signup/>
           </>):(<>
-            <form className="formBody">
-              <label htmlFor="b2" >Email-id</label>
-              <input type="text" id="b2" required="required"/>
-              <label htmlFor="b3" >Password</label>
-              <input type="password" id="b3" required="required"/>
-              <button>SIGN IN</button>
-            </form>
+            <Signin/>
           </>)}
         </div>
     </body>
