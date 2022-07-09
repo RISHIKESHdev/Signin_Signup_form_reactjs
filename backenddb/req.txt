@@ -1,0 +1,15 @@
+yarn init -y
+yarn add body-parser  ("enable us to send post request")
+yarn add cors
+yarn add express
+yarn add mongoose
+yarn add nodemon ("automatically reset server")
+yarn add dotenv ("helps in hideing environmental variables")
+
+
+make imports similar to frontend in package.json use
+"type":"module"
+Add start script
+"scripts":{
+    "start": "nodemon index.js"
+}
