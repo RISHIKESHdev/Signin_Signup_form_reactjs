@@ -9,10 +9,13 @@ export default function Landingpage() {
         if(location) {
             let tmp = location.pathname.split("/").pop();
             if (tmp.toLowerCase()==="resetpassword"){
-                tmp="reset pass"
+                tmp="Reset password"
             }
-            if(tmp===""){
+            else if(tmp===""){
                 tmp="Landing"
+            }
+            else if(tmp==="Forgotpassword"){
+                tmp="Forgot password"
             }
             setPathName(tmp)
         }
