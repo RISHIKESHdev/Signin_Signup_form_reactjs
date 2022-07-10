@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import { Outlet, Link, useLocation } from "react-router-dom";
 
-export default function Landingpage() {
+export const Landingpage = () => {
     const location = useLocation();
     const [pathName, setPathName] = useState(null) ;
     
