@@ -1,15 +1,3 @@
-/* body {
-    margin: 0;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    font-family: "Lato", sans-serif;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-} */
 .landingpage{
     height: 100vh;
     width: 100vw;
@@ -26,10 +14,10 @@
 .navb{
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     flex-direction: row;
     /* height:10%; */
-    width: 30%;
+    width: 40%;
     height: 10%;
     border-radius: 35px;
     box-shadow:
@@ -82,7 +70,7 @@
     display: flex;
     justify-content: space-between;
 }
-.formOptions>div{
+.activeSign{
     width:45%;
     height:90%;
     display: flex;
@@ -90,12 +78,24 @@
     align-items: center;
     border: none;
     border-radius: 35px;
+    transition: 2s;
+    box-shadow:
+    -2px -2px 2px rgba(255, 255, 255, 0.8),
+    2px 2px 2px rgba(0, 0, 0, 0.2);
+    transition: 2s;
 }
-.activeSign{
+.inactiveSign{
+    width:45%;
+    height:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
     border-radius: 35px;
     box-shadow:
     -6px -6px 6px rgba(255, 255, 255, 0.8),
     6px 6px 6px rgba(0, 0, 0, 0.2);
+    transition: 2s;
 }
 .formBody{
     width: 100%;
@@ -114,15 +114,23 @@ label{
 }
 input{
     border: none;
-    border-radius: 15px;
+    border-radius: 25px;
     width:80%;
-    height:8%;
+    height:10%;
     outline: none;
     text-align: left;
-    text-indent: 10px;
+    text-indent: 5%;
     box-shadow: inset 5px 5px 5px #cbced1,
     inset -5px -5px 5px #ffffff;
   }
+  ::placeholder{
+    font-size: medium;
+  }
+  input:focus::placeholder{
+    font-size: small;
+    transform: scale(.9) translateY(-90%) translateX(-20px);
+    transition: 1s;
+}
 button{
     border: none;
     border-radius: 35px;
