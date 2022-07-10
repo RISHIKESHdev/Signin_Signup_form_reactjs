@@ -11,8 +11,11 @@ export default function Landingpage() {
             if (tmp.toLowerCase()==="resetpassword"){
                 tmp="Reset password"
             }
-            if(tmp===""){
+            else if(tmp===""){
                 tmp="Landing"
+            }
+            else if(tmp==="Forgotpassword"){
+                tmp="Forgot password"
             }
             setPathName(tmp)
         }

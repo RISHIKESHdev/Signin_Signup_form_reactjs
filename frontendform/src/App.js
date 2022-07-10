@@ -6,6 +6,7 @@ import Signin from './components/Signin'
 import Signup from './components/Signup'
 import Landingpage from './components/Landingpage'
 import Resetpassword from './components/Resetpassword'
+import Forgotpassword from './components/Forgotpassword'
 import './App.css';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route index path="Signin" element={<Signin />} />
             <Route path="Signup" element={<Signup />} />
             <Route path="Resetpassword" element={<Resetpassword />} />
+            <Route path="Forgotpassword" element={<Forgotpassword />} />
             {/* <Route path="*" element={<NoPage />} /> */}
           </Route>
         </Routes>
